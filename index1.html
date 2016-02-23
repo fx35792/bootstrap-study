@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bootstrap表单篇</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<style type="text/css">
+	.main{margin:50px;}
+	</style>
+</head>
+<body>
+	<div class="main">
+		<h3>可选布局</h3>
+		<!--1.搜索表单 .form-search .input-medium .search-query-->
+		<b>1.搜索表单 .form-search .input-medium .search-query</b>
+		<form action="" class="form-search">
+			<input type="text" class="input-medium search-query">
+			<button type="button" class="btn">Search</button>
+		</form>
+		<b>2.行内表单 .form-inline</b>
+		<!--2.行内表单 .form-inline -->
+		<form action="" class="form-inline">
+			<input type="text" class="input-small" placeholder="email">
+			<input type="password" class="input-small" placeholder="Password">
+			<label for="" class="checkbox">
+				<input type="checkbox">Remember me
+			</label>
+			<button type="submit" class="btn">Sign In</button>
+		</form>
+		<!--3.水平表单 .form-horizontal .control-group .control-label .controls-->
+		<b>3.水平表单 .form-horizontal .control-group .control-label .controls</b>
+		<form action="" class="form-horizontal">
+			<div class="control-group">
+				<label for="inputemail" class="control-label">Email</label>
+				<div class="controls">
+					<input type="email" class="" id="inputemail" placeholder="Email">
+				</div>
+			</div>
+			<div class="control-group">
+				<label for="inputpassw" class="control-label">Password</label>
+				<div class="controls">
+					<input type="password" class="" id="inputpassw" placeholder="Password">
+				</div>
+			</div>
+			<div class="control-group">
+				<div class="controls">
+					<label class="checkbox">
+						<input type="checkbox">Remember me
+					</label>
+					<button type="button" class="btn">Sign in</button>
+				</div>
+			</div>
+		</form>
+		<br/>
+		<br/>
+		<h3>支持的表单控件</h3>
+		<form action="">
+			<!--复选框和单选框-->
+			<b>1.复选框和单选框</b>
+			<label for="checkbox1" class="checkbox">
+				<input type="checkbox" value="" id="checkbox1">
+				 Option one is this and that—be sure to include why it's great
+			</label>
+			<label for="radio1" class="radio">
+				<input type="radio" name="radiosex" id="radio1" value="option1">
+				Option one is this and that—be sure to include why it's great
+			</label>
+			<label for="radio2" class="radio">
+				<input type="radio" name="radiosex" id="radio2" value="option1">
+				Option one is this and that—be sure to include why it's great
+			</label>
+			<b>2.行内复选框</b>
+			<div>
+				<label for="" class="checkbox inline">
+					<input type="checkbox">1
+				</label>
+				<label for="" class="checkbox inline">
+					<input type="checkbox">2
+				</label>
+				<label for="" class="checkbox inline">
+					<input type="checkbox">3
+				</label>
+			</div>
+			<b>3.下拉框</b>
+			<div>
+				<select name="" id="">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+				</select>
+			</div>
+			<div>
+				<select name="" id="" multiple="mutiple">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+				</select>
+			</div>
+			<b>4.扩展表单控件</b>
+			<br/>
+			<div class="input-prepend">
+				<span class="add-on">@</span>
+				<input type="text" class="span2" placeholder="username">
+			</div>
+			<br/>
+			<div class="input-append">
+				<input type="text" class="span2" placeholder="money">
+				<span class="add-on">&yen;</span>
+			</div>
+			<br/>
+			<div class="input-prepend input-append">
+				<span class="add-on">&yen;</span>
+				<input type="text" class="span2" placeholder="money">
+				<span class="add-on">0.00</span>
+			</div>
+			<br/>
+			<b>5.按钮下拉菜单</b>
+			<div class="input-prepend">
+			<!-- <div class="input-append"> -->
+				<div class="btn-group">
+					<button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+						Action
+						<span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu">
+						<li><a href="###">Action</a></li>
+						<li><a href="###">Author</a></li>
+						<li><a href="###">Film</a></li>
+					</ul>
+				</div>
+				<input type="text" class="span2">				
+			</div>
+			<div class="input-prepend input-append">
+				<div class="btn-group">
+					<button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+						Action
+						<span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu">
+						<li><a href="###">Action</a></li>
+						<li><a href="###">Author</a></li>
+						<li><a href="###">Film</a></li>
+					</ul>
+				</div>
+				<input type="text" class="span2">
+				<div class="btn-group">
+					<button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+						Action
+						<span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu">
+						<li><a href="###">Action</a></li>
+						<li><a href="###">Author</a></li>
+						<li><a href="###">Film</a></li>
+					</ul>
+				</div>
+			</div>
+			<br/>
+			<div class="input-prepend">
+				<div class="btn-group">
+					<button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+						Action
+					</button>
+					<button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+						<span class="caret"></span>
+					</button>
+				</div>
+				<input type="text" class="span2">
+			</div>
+			<br/>
+		</form>
+		<b>6.搜索表单</b>
+		<form action="" class="form-search">
+			<div class="input-append">
+				<input type="text" class="span2 search-query">
+				<button type="button" class="btn">Search</button>
+			</div>
+		</form>
+		<br>
+		<b>7.相对大小</b>
+		<form action="">
+			<input type="text" class="input-mini">
+			<input type="text" class="input-small">
+			<input type="text" class="input-medium">
+			<input type="text" class="input-large">
+			<input type="text" class="input-xlarge">
+			<input type="text" class="input-xxlarge">
+		</form>
+		<br>
+		<b>8.网格大小</b>
+		<form action="">
+			<div class="controls">
+				<input type="text" class="span2">
+				<br/>
+				<select name="" id="" class="span3">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+				</select>
+			</div>
+		</form>
+		<br>
+		<b>9.不可编辑的输入框</b>
+		<form action="">
+			<span class="input-large uneditable-input">Some value here</span>
+		</form>
+		<form action="" class="form-actions">
+			<button type="submit" class="btn btn-primary">Save</button>
+			<button type="button" class="btn">Cancel</button>
+		</form>
+	</div>
+</body>
+</html>
